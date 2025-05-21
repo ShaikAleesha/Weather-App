@@ -1,0 +1,115 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+/* Ensure full page height for vertical centering */
+html, body {
+    height: 100%;
+}
+
+/* Center the weather box */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Viewport height */
+    background-color: rgb(37, 37, 37);
+}
+
+/* Styling the weather box */
+.box {
+    width: 450px;
+    background: linear-gradient(135deg, #00e1ff, #5b548a);
+    border-radius: 1.5rem;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Search bar styling */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navBar input {
+    width: 75%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 16px;
+    outline: none;
+}
+
+.navBar button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Weather display center part */
+.center img {
+    width: 100px;
+    margin: 20px 0; /*setting top and bottom margin to 20px, and left and right margin to 0*/
+}
+
+#country {
+    font-size: 36px;
+}
+
+#temp {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.des{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Footer section */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-box img {
+    height: 40px;
+}
+
+.info-box h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+/* Error message */
+#err {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    display: none; /* You can toggle this with JS */
+}
+
+

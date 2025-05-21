@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for search icon -->
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="box">
+            <!-- Search Bar -->
+            <div class="navBar">
+                <input type="text" placeholder="Enter City Name">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Weather Info Center -->
+            <div class="center">
+                <h1 id="country">Germany</h1>
+                <img src="imgs/clouds.png" alt="weather icon">
+                <h1 id="temp">45°</h1>
+                <p class="des">Moderate Rain</p>
+            </div>
+
+            <!-- Footer: Humidity and Wind Speed -->
+            <div class="footer">
+                <div class="info-box">
+                    <img src="imgs/humidity.png" alt="Humidity">
+                    <div>
+                        <h1 class="hum">96%</h1>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <img src="imgs/wind.png" alt="Wind Speed">
+                    <div>
+                        <h1 class="speed">0.85km/hr</h1>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Error Message -->
+            <p id="err">City name is invalid</p>
+        </div>
+    </div>
+
+    <script src="file.js"></script>
+</body>
+</html>
